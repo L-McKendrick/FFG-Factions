@@ -1,0 +1,5 @@
+#include "cfgPatches.hpp"
+#include "cfgFactionClasses.hpp"
+#include "cfgWeapons.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgGroups.hpp"
