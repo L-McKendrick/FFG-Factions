@@ -357,7 +357,7 @@ class CfgGroups {
                     rarityGroup = 0.5;
 
                     class Unit0 {
-                        position[] = {5,-5,0};
+                        position[] = {0,0,0};
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "sia_arng_marksman_sf";
