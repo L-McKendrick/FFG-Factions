@@ -209,8 +209,8 @@ class sia_arng_rifleman_4 : sia_arng_rifleman {
 
 };
 
-class B_soldier_LAT_F;
-class sia_arng_rifleman_lat : B_soldier_LAT_F {
+class B_soldier_LAT2_F;
+class sia_arng_rifleman_lat : B_soldier_LAT2_F {
 	
 	AUTHOR_MACRO
 	MACRO_SIDE
@@ -219,8 +219,8 @@ class sia_arng_rifleman_lat : B_soldier_LAT_F {
 
 	uniformClass = "U_Simc_bdu_erla_roll";
 
-	linkedItems[] = {"V_Simc_vest_pasgt_lbv_2","H_Simc_pasgt_m81_b","vn_m72",Standard_Equipment};
-	respawnlinkedItems[] = {"V_Simc_vest_pasgt_lbv_2","H_Simc_pasgt_m81_b","vn_m72",Standard_Equipment};
+	linkedItems[] = {"V_Simc_vest_pasgt_lbv_2","H_Simc_pasgt_m81_b",Standard_Equipment};
+	respawnlinkedItems[] = {"V_Simc_vest_pasgt_lbv_2","H_Simc_pasgt_m81_b",Standard_Equipment};
 
 	weapons[] = {"vn_m16","vn_m1911","vn_m72","Throw","Put"};
 	respawnWeapons[] = {"vn_m16","vn_m1911","vn_m72","Throw","Put"};
@@ -246,6 +246,45 @@ class sia_arng_rifleman_lat : B_soldier_LAT_F {
 
 	backpack = "";
 
+};
+
+class B_soldier_LAT_F;
+class sia_arng_rifleman_at : B_soldier_LAT_F {
+
+	AUTHOR_MACRO
+	MACRO_SIDE
+
+	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
+
+	uniformClass = "U_Simc_bdu_erla";
+
+	linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b",Standard_Equipment};
+	respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b",Standard_Equipment};
+
+	weapons[] = {"gm_m16a2_blk","vn_m1911","US85_M136","Throw","Put"};
+	respawnWeapons[] = {"gm_m16a2_blk","vn_m1911","US85_M136","Throw","Put"};
+
+	magazines[] = 
+	{
+		MAG_6(vn_m16_30_mag),
+		MAG_3(vn_m1911_mag),
+		"US85_M136_Mag",
+		"vn_m18_white_mag",
+		"vn_m18_green_mag",
+		MAG_2(Chemlight_green)
+	};
+	respawnMagazines[] = 
+	{
+		MAG_6(vn_m16_30_mag),
+		MAG_3(vn_m1911_mag),
+		"US85_M136_Mag",
+		"vn_m18_white_mag",
+		"vn_m18_green_mag",
+		MAG_2(Chemlight_green)
+	};
+
+	backpack = "";
+	
 };
 
 class B_engineer_F;
@@ -494,7 +533,8 @@ class sia_arng_squadleader : B_Soldier_SL_F {
 };
 
 class B_crew_F;
-class sia_arng_crewman : B_crew_F {
+class sia_crew_F_base : B_crew_F { class EventHandlers; };
+class sia_arng_crewman : sia_crew_F_base {
 	
 	AUTHOR_MACRO
 	MACRO_SIDE
@@ -503,11 +543,17 @@ class sia_arng_crewman : B_crew_F {
 	
 	uniformClass = "U_Simc_bdu_raid_blench_nomex";
 
+	headgearList[] = {
+		"H_Simc_CVC", 0.9,
+		"H_Simc_CVC_G", 0.4,
+		"H_Simc_CVC_G_low", 0.4,
+	};
+
 	linkedItems[] = {"V_Simc_vest_pasgt_grun","H_Simc_CVC",Standard_Equipment};
 	respawnlinkedItems[] = {"V_Simc_vest_pasgt_grun","H_Simc_CVC",Standard_Equipment};
 
-	weapons[] = {"vn_m3a1","Throw","Put"};
-	respawnWeapons[] = {"vn_m3a1","Throw","Put"};
+	weapons[] = {"vn_m3a1","vn_m1911","Throw","Put"};
+	respawnWeapons[] = {"vn_m3a1","vn_m1911","Throw","Put"};
 
 	magazines[] = 
 	{
@@ -526,6 +572,11 @@ class sia_arng_crewman : B_crew_F {
 		"vn_m18_white_mag",
 		"vn_m18_green_mag",
 		MAG_2(Chemlight_green)
+	};
+
+	class EventHandlers : EventHandlers
+	{
+		init = "if (local (_this select 0)) then { [(_this select 0), [], []] call BIS_fnc_unitHeadgear; };";
 	};
 
 };
@@ -575,7 +626,7 @@ class sia_arng_officer : B_officer_F {
 
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
-	uniformClass = "";  //TO-DO
+	uniformClass = "U_simc_bdu_veldjas_m81_trop";
 
 	linkedItems[] = {"V_Simc_vest_pasgt_alice_lc2_45_ligt","H_Simc_Hat_Patrol_m81",Standard_Equipment};
 	respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_lc2_45_ligt","H_Simc_Hat_Patrol_m81",Standard_Equipment};
