@@ -1,8 +1,7 @@
 /* MACROS DEFINITION */
 
 #define Macro_scope scope = 2;\
-					scopeCurator = 2;\
-					author=McKendrick;
+					scopeCurator = 2;
 
 #define AUTHOR_MACRO author="Soldiers in Arms";
 
@@ -29,4 +28,6 @@
 class cfgVehicles {
 	#include "units\backpacks.hpp"
     #include "units\infantry.hpp"
+
+	#include "vehicles\cars.hpp"
 };
