@@ -5,9 +5,11 @@ class sia_arng_rifleman : B_soldier_F {
 	AUTHOR_MACRO
 	MACRO_SIDE
 
+	editorPreview = "\sia_arng\data\preview\sia_arng_rifleman_3.jpg";
+
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
-	uniformClass = "U_Simc_bdu_erla"
+	uniformClass = "U_Simc_bdu_erla";
 
 	linkedItems[] = {"V_Simc_vest_pasgt_lbv_1","H_Simc_pasgt_m81",Standard_Equipment};
 	respawnlinkedItems[] = {"V_Simc_vest_pasgt_lbv_1","H_Simc_pasgt_m81",Standard_Equipment};
@@ -41,6 +43,8 @@ class sia_arng_grenadier : B_Soldier_GL_F {
 	
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_grenadier.jpg";
 
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
@@ -92,6 +96,8 @@ class sia_arng_teamleader : B_Soldier_TL_F {
 
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_teamleader.jpg";
 
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
@@ -145,9 +151,11 @@ class sia_arng_rifleman_lite : B_Soldier_lite_F {
 	AUTHOR_MACRO
 	MACRO_SIDE
 
+	editorPreview = "\sia_arng\data\preview\sia_arng_rifleman_lite.jpg";
+
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
-	uniformClass = "U_Simc_bdu_erla_tee"
+	uniformClass = "U_Simc_bdu_erla_tee";
 
 	linkedItems[] = {"V_Simc_Alice_mc_alt","H_Simc_Hat_Patrol_m81",Standard_Equipment};
 	respawnlinkedItems[] = {"V_Simc_Alice_mc_alt","H_Simc_Hat_Patrol_m81",Standard_Equipment};
@@ -178,6 +186,8 @@ class sia_arng_rifleman_2 : sia_arng_rifleman {
 	
 	displayName = "Rifleman 2";
 
+	editorPreview = "\sia_arng\data\preview\sia_arng_rifleman_2.jpg";
+
 	uniformClass = "U_Simc_bdu_eto_roll";
 
 	linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_45","H_Simc_pasgt_m81_b",Standard_Equipment};
@@ -188,6 +198,8 @@ class sia_arng_rifleman_2 : sia_arng_rifleman {
 class sia_arng_rifleman_3 : sia_arng_rifleman {
 	
 	displayName = "Rifleman (Backpack)";
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_rifleman_3.jpg";
 
 	uniformClass = "U_Simc_bdu_eto";
 
@@ -200,6 +212,8 @@ class sia_arng_rifleman_3 : sia_arng_rifleman {
 class sia_arng_rifleman_4 : sia_arng_rifleman {
 
 	displayName = "Rifleman (M16A1)";
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_rifleman_4.jpg";
 
 	linkedItems[] = {"V_Simc_vest_pasgt_alice_mc","H_Simc_pasgt_m81_scrim_alt",Standard_Equipment};
 	respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc","H_Simc_pasgt_m81_scrim_alt",Standard_Equipment};
@@ -214,6 +228,8 @@ class sia_arng_rifleman_lat : B_soldier_LAT2_F {
 	
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_rifleman_lat.jpg";
 
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
@@ -248,50 +264,14 @@ class sia_arng_rifleman_lat : B_soldier_LAT2_F {
 
 };
 
-class B_soldier_LAT_F;
-class sia_arng_rifleman_at : B_soldier_LAT_F {
-
-	AUTHOR_MACRO
-	MACRO_SIDE
-
-	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
-
-	uniformClass = "U_Simc_bdu_erla";
-
-	linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b",Standard_Equipment};
-	respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b",Standard_Equipment};
-
-	weapons[] = {"gm_m16a2_blk","vn_m1911","US85_M136","Throw","Put"};
-	respawnWeapons[] = {"gm_m16a2_blk","vn_m1911","US85_M136","Throw","Put"};
-
-	magazines[] = 
-	{
-		MAG_6(vn_m16_30_mag),
-		MAG_3(vn_m1911_mag),
-		"US85_M136_Mag",
-		"vn_m18_white_mag",
-		"vn_m18_green_mag",
-		MAG_2(Chemlight_green)
-	};
-	respawnMagazines[] = 
-	{
-		MAG_6(vn_m16_30_mag),
-		MAG_3(vn_m1911_mag),
-		"US85_M136_Mag",
-		"vn_m18_white_mag",
-		"vn_m18_green_mag",
-		MAG_2(Chemlight_green)
-	};
-
-	backpack = "";
-	
-};
 
 class B_engineer_F;
 class sia_arng_engineer : B_engineer_F {
 	
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_engineer.jpg";
 
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
@@ -339,6 +319,8 @@ class sia_arng_machinegunner : B_HeavyGunner_F {
 	AUTHOR_MACRO
 	MACRO_SIDE
 
+	editorPreview = "\sia_arng\data\preview\sia_arng_machinegunner.jpg";
+
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
 	displayName = "Machinegunner";
@@ -372,48 +354,14 @@ class sia_arng_machinegunner : B_HeavyGunner_F {
 
 };
 
-class B_soldier_AR_F;
-class sia_arng_autorifleman : B_soldier_AR_F {
-	
-	AUTHOR_MACRO
-	MACRO_SIDE
-
-	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
-
-	uniformClass = "U_Simc_bdu_erla_tee";
-
-	linkedItems[] = {"V_Simc_vest_pasgt_alice_249","H_Simc_pasgt_m81_scrim_alt",Standard_Equipment};
-	respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_249","H_Simc_pasgt_m81_scrim_alt",Standard_Equipment};
-
-	weapons[] = {"US85_M249","vn_m1911","Throw","Put"};
-	respawnWeapons[] = {"US85_M249","vn_m1911","Throw","Put"};
-
-	magazines[] = 
-	{
-		MAG_3(US85_200Rnd_556x45),
-		MAG_3(vn_m1911_mag),
-		"vn_m67_grenade_mag",
-		"vn_m18_white_mag",
-		"vn_m18_green_mag",
-		MAG_2(Chemlight_green)
-	};
-	respawnMagazines[] = 
-	{
-		MAG_3(US85_200Rnd_556x45),
-		MAG_3(vn_m1911_mag),
-		"vn_m67_grenade_mag",
-		"vn_m18_white_mag",
-		"vn_m18_green_mag",
-		MAG_2(Chemlight_green)
-	};
-
-};
 
 class B_soldier_M_F;
 class sia_arng_marksman : B_soldier_M_F {
 	
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_marksman.jpg";
 
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
@@ -451,6 +399,8 @@ class sia_arng_medic : B_medic_F {
 	
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_medic.jpg";
 
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
@@ -492,6 +442,8 @@ class sia_arng_squadleader : B_Soldier_SL_F {
 	
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_squadleader.jpg";
 
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
@@ -538,6 +490,8 @@ class sia_arng_crewman : sia_crew_F_base {
 	
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_crewman.jpg";
 
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 	
@@ -587,6 +541,8 @@ class sia_arng_pilot : B_Helipilot_F {
 	AUTHOR_MACRO
 	MACRO_SIDE
 
+	editorPreview = "\sia_arng\data\preview\sia_arng_pilot.jpg";
+
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
 	uniformClass = "vn_b_uniform_heli_01_01";
@@ -624,6 +580,8 @@ class sia_arng_officer : B_officer_F {
 	AUTHOR_MACRO
 	MACRO_SIDE
 
+	editorPreview = "\sia_arng\data\preview\sia_arng_officer.jpg";
+
 	identityTypes[] = {"LanguageENG_F","Head_NATO","vn_g_macv_default"};
 
 	uniformClass = "U_simc_bdu_veldjas_m81_trop";
@@ -658,6 +616,8 @@ class sia_arng_sf_soldier : B_recon_F {
 
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_sf_soldier.jpg";
 
 	uniformClass = "U_Simc_bdu_raid_trop";
 
@@ -699,6 +659,8 @@ class sia_arng_teamleader_sf : B_recon_TL_F {
 
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_teamleader_sf.jpg";
 
 	uniformClass = "U_Simc_bdu_raid_knee";
 
@@ -762,6 +724,8 @@ class sia_arng_marksman_sf : B_recon_M_F {
 	AUTHOR_MACRO
 	MACRO_SIDE
 
+	editorPreview = "\sia_arng\data\preview\sia_arng_marksman_sf.jpg";
+
 	uniformClass = "U_Simc_bdu_raid_knee_trop";
 
 	identityTypes[] = {"LanguageENG_F","vn_b_camo_us","vn_g_macv_sf"};
@@ -815,8 +779,10 @@ class sia_arng_sf_blackop : B_recon_exp_F {
 
 	AUTHOR_MACRO
 	MACRO_SIDE
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_sf_blackop.jpg";
 	
-	displayName = "Black Op"
+	displayName = "Black Op";
 	identityTypes[] = {"LanguageENG_F","vn_b_camo_us","vn_g_macv_sf"};
 
 	headgearList[] = {
@@ -871,6 +837,8 @@ class sia_arng_machinegunner_asst : sia_arng_rifleman_3 {
 
 	displayName = "Asst. Machinegunner";
 
+	editorPreview = "\sia_arng\data\preview\sia_arng_machinegunner_asst.jpg";
+
 	uniformClass = "U_Simc_bdu_erla";
 
 	linkedItems[] = {"V_Simc_vest_pasgt_alice_249","H_Simc_pasgt_m81",Standard_Equipment};
@@ -883,6 +851,8 @@ class sia_arng_machinegunner_asst : sia_arng_rifleman_3 {
 class sia_arng_at_specialist : sia_arng_rifleman_lat {
 
 	displayName = "AT Specialist";
+
+	editorPreview = "\sia_arng\data\preview\sia_arng_at_specialist.jpg";
 
 	weapons[] = {"gm_m16a2_blk","gm_pzf84_oli","Binocular","Throw","Put"};
 	respawnWeapons[] = {"gm_m16a2_blk","gm_pzf84_oli","Binocular","Throw","Put"};

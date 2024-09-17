@@ -25,6 +25,6 @@
 #define ITEM_XX(a,b) class _xx_##a { name = a; count = b; }
 
 class cfgVehicles {
-	#include "units\backpacks.hpp"
-    #include "units\infantry.hpp"
+    #include "infantry.hpp"
+	#include "cars.hpp"
 };
