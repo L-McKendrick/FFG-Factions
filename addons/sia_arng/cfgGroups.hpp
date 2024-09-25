@@ -37,7 +37,7 @@ class CfgGroups {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 1;
-                        vehicle = "sia_arng_rifleman_at";
+                        vehicle = "sia_arng_rifleman_lat";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
