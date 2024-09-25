@@ -238,14 +238,14 @@ class sia_arng_rifleman_lat : B_soldier_LAT2_F {
 	linkedItems[] = {"V_Simc_vest_pasgt_lbv_2","H_Simc_pasgt_m81_b",Standard_Equipment};
 	respawnlinkedItems[] = {"V_Simc_vest_pasgt_lbv_2","H_Simc_pasgt_m81_b",Standard_Equipment};
 
-	weapons[] = {"vn_m16","vn_m1911","vn_m72","Throw","Put"};
-	respawnWeapons[] = {"vn_m16","vn_m1911","vn_m72","Throw","Put"};
+	weapons[] = {"vn_m16","vn_m1911","gm_m72a3_oli","Throw","Put"};
+	respawnWeapons[] = {"vn_m16","vn_m1911","gm_m72a3_oli","Throw","Put"};
 
 	magazines[] = 
 	{
 		MAG_6(vn_m16_30_mag),
 		MAG_3(vn_m1911_mag),
-		"vn_m72_mag",
+		"gm_1Rnd_66mm_heat_m72a3",
 		"vn_m18_white_mag",
 		"vn_m18_green_mag",
 		MAG_2(Chemlight_green)
@@ -254,7 +254,7 @@ class sia_arng_rifleman_lat : B_soldier_LAT2_F {
 	{
 		MAG_6(vn_m16_30_mag),
 		MAG_3(vn_m1911_mag),
-		"vn_m72_mag",
+		"gm_1Rnd_66mm_heat_m72a3",
 		"vn_m18_white_mag",
 		"vn_m18_green_mag",
 		MAG_2(Chemlight_green)
