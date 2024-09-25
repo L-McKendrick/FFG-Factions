@@ -1,7 +1,7 @@
-name = "FFG Factions";
+name = "US Army National Guard 80's";
 author = "Liam McKendrick";
 action = "";
-overview = "1980-1990s US Army National Guard units";
+overview = "Late 1980s US Army National Guard units";
 
 logoSmall = "LogoSmall.paa";
 logo = "Logo.paa";
