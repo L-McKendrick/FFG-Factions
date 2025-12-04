@@ -13,8 +13,8 @@ class sia_arng_rifleman_at_cup : B_soldier_LAT_F {
 	linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b",Standard_Equipment};
 	respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b",Standard_Equipment};
 
-	weapons[] = {"gm_m16a2_blk","vn_m1911","rhs_weap_M136","Throw","Put"};
-	respawnWeapons[] = {"gm_m16a2_blk","vn_m1911","rhs_weap_M136","Throw","Put"};
+	weapons[] = {"gm_m16a2_blk","vn_m1911","CUP_launch_M136","Throw","Put"};
+	respawnWeapons[] = {"gm_m16a2_blk","vn_m1911","CUP_launch_M136","Throw","Put"};
 
 	magazines[] = 
 	{
@@ -51,8 +51,8 @@ class sia_arng_autorifleman_cup : B_soldier_AR_F {
 	linkedItems[] = {"V_Simc_vest_pasgt_alice_249","H_Simc_pasgt_m81_scrim_alt",Standard_Equipment};
 	respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_249","H_Simc_pasgt_m81_scrim_alt",Standard_Equipment};
 
-	weapons[] = {"rhs_weap_m249_pip","vn_m1911","Throw","Put"};
-	respawnWeapons[] = {"rhs_weap_m249_pip","vn_m1911","Throw","Put"};
+	weapons[] = {"CUP_lmg_M249_E1","vn_m1911","Throw","Put"};
+	respawnWeapons[] = {"CUP_lmg_M249_E1","vn_m1911","Throw","Put"};
 
 	magazines[] = 
 	{
